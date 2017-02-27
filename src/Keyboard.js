@@ -1,16 +1,13 @@
 var keycode = require('keycode');
 
-let keys = {
-    LEFT: {
-        isDown: false
-    },
-    RIGHT: {
-        isDown: false
-    },
-    ENTER: {
-        isDown: false
+let keys = JSON.parse(JSON.stringify(keycode.codes));
+for (let key in keys) {
+    if (keys.hasOwnProperty(key)) {
+        keys[key.toUpperCase()] = {
+            isDown: false
+        };
     }
-};
+}
 
 let _getKey = function (event) {
     let key = keycode(event);
