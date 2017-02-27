@@ -1,0 +1,32 @@
+{
+  "name": "basic-game-pack",
+  "version": "1.0.0",
+  "description": "Playground for basic games",
+  "main": "src/index.js",
+  "dependencies": {
+    "http-server": "0.9.0",
+    "keycode": "^2.1.8"
+  },
+  "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.22.0",
+    "copy-webpack-plugin": "4.0.1",
+    "uglify-loader": "1.4.0",
+    "webpack": "1.14.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch",
+    "serve": "http-server -p 9000",
+    "dev": "npm run serve | npm run watch",
+    "start": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "game",
+    "es6",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC"
+}

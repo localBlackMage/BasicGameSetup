@@ -1,0 +1,8 @@
+node_modules/
+build/
+.idea/
+logs/
+*.log
+*.tmp
+*.psd
+.DS_Store
