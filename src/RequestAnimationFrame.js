@@ -24,5 +24,5 @@ requestAnimationFrame = requestAnimationFrame || requestAnimationFrameDefaultFun
 cancelAnimationFrame = cancelAnimationFrame || cancelAnimationFrameDefaultFunction;
 
 export function getDeltaTime() {
-    return _deltaTime;
+    return _deltaTime / 1000;
 }
